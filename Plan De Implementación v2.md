@@ -265,3 +265,34 @@ Firestore es NoSQL. Las tablas relacionales proporcionadas se mapearán a **cole
 ---
 
 > ✅ **Estado del Plan:** Listo para ejecución. No requiere modificaciones arquitectónicas adicionales para comenzar la fase 1. ¿Deseas que se genere el siguiente entregable: diagrama de flujos de navegación, especificación detallada de reglas de Firestore por colección, o checklist de configuración de entorno por plataforma?
+
+
+## PROMPT
+
+CREA EL PLAN DE IMPLEMENTACION MAS PROFESIONAL Y EXTENSO basado en el anterior, en pocas palabras mejoralo.
+framework:flutter dart
+base de datos en la nube: console firebase, firestore
+Autenticación por correo electrónico y passworf.
+no usar analiticas, ni para producción.
+Estructura de carpetas y archivos dentro de la carpeta bin.
+aplicación para: android/web/iOS/windows
+diseño UI, UX y establece que colores vas a usar en primer plano
+las dependencias de pubsec.yaml
+Agregar las tablas o entidades con sus atributos.
+utilizar provider
+agrega tambien una tabla con los colores y sus codigos para la aplicacion.
+agrega la demas informacion que sea necesaria.
+
+estos son mis tablas:
+Games: game_id, name, manufacturer.
+Sets: set_id, game_id, name, release_date, set_code.
+Master_Cards: card_id, set_id, collector_number, name, rarity, card_type.
+Inventory_Items: sku_id, card_id, condition, is_foil, language, price_current, stock_quantity.
+Users: user_id, username, email, password_hash, role.
+Orders: order_id, user_id, order_date, total_amount, status.
+Order_Items: order_item_id, order_id, sku_id, quantity, price_at_sale.
+Price_History: history_id, card_id, market_price, recorded_at.
+Wishlists: wishlist_id, user_id, card_id, added_at.
+Shipping_Details: shipping_id, order_id, address, tracking_number, courier_name.
+Payment_Methods: payment_id, user_id, provider, last_four_digits, expiry_date.
+Reviews: review_id, user_id, card_id, rating, comment, created_at.
